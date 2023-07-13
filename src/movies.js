@@ -196,7 +196,20 @@ function orderAlphabetically(moviesArray) {
 
 
 // BONUS - Iteration 7: Time Format - Turn duration of the movies from hours to minutes
-function turnHoursToMinutes(moviesArray) {}
+function turnHoursToMinutes(moviesArray) {
+
+    const hoursToMinutes = moviesArray.map((eachMovie) => {
+
+        let hour = eachMovie.duration
+        let parts = hour.split(':')
+        let totalMinutes = parseInt(parts[0]) * 60 + parseInt(parts[1])
+        
+        console.log(totalMinutes)
+        return totalMinutes
+    })
+
+    eachMovie.duration = totalMinutes
+}
 
 
 // BONUS - Iteration 8: Best yearly score average - Best yearly score average
